@@ -27,9 +27,20 @@ git worktree list
 git worktree remove 02-worktrees/branch-name
 ```
 
+## Quick Setup
+
+To set up the experiments worktree after cloning:
+
+```bash
+git worktree add 02-worktrees/experiments experiments
+```
+
 ## Available Worktrees
 
 - **experiments**: Sandbox environment with `sandbox.ipynb` for LLM exploration and testing
+  ```bash
+  git worktree add 02-worktrees/experiments experiments
+  ```
 
 ## Notes
 
