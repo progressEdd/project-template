@@ -1,3 +1,8 @@
+# Git worktrees (ignore all worktree contents but keep the directory)
+02-worktrees/*
+!02-worktrees/.gitkeep
+!02-worktrees/README.md
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
