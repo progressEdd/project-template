@@ -21,7 +21,7 @@ git worktree add 02-worktrees/new-feature -b new-feature
 ```bash
 # Creates a new worktree with a new branch forked from an existing branch
 # git worktree add 02-worktrees/<worktree-dir> -b <new-branch-name> <source-branch>
-git worktree add 02-worktrees/experiments-petri-dish -b experiments-petri-dish experiments
+git worktree add 02-worktrees/experiments-petri-dish -b experiments-petri-dish 00-experiments
 ```
 
 ### List all worktrees
@@ -39,12 +39,12 @@ git worktree remove 02-worktrees/branch-name
 To set up the experiments worktree after cloning:
 
 ```bash
-git worktree add 02-worktrees/experiments experiments
+git worktree add 02-worktrees/00-experiments 00-experiments
 ```
 
 ## Available Worktrees
 
-- **experiments**: Sandbox environment with `sandbox.ipynb` for LLM exploration and testing
+- **00-experiments**: Sandbox environment with `sandbox.ipynb` for LLM exploration and testing
   ```bash
   git worktree add 02-worktrees/experiments experiments
   ```
