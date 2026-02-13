@@ -56,22 +56,22 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| TMPL-01 | — | Pending |
-| TMPL-02 | — | Pending |
-| WKTR-01 | — | Pending |
-| WKTR-02 | — | Pending |
-| WKTR-03 | — | Pending |
-| FILE-01 | — | Pending |
-| FILE-02 | — | Pending |
-| FILE-03 | — | Pending |
-| FILE-04 | — | Pending |
-| ROOT-01 | — | Pending |
+| TMPL-01 | Phase 1: Template Preparation | Pending |
+| TMPL-02 | Phase 1: Template Preparation | Pending |
+| WKTR-01 | Phase 2: Branch Creation Flow | Pending |
+| WKTR-02 | Phase 2: Branch Creation Flow | Pending |
+| WKTR-03 | Phase 2: Branch Creation Flow | Pending |
+| FILE-01 | Phase 2: Branch Creation Flow | Pending |
+| FILE-02 | Phase 2: Branch Creation Flow | Pending |
+| FILE-03 | Phase 2: Branch Creation Flow | Pending |
+| FILE-04 | Phase 2: Branch Creation Flow | Pending |
+| ROOT-01 | Phase 3: Root README Index | Pending |
 
 **Coverage:**
 - v1 requirements: 10 total
-- Mapped to phases: 0
-- Unmapped: 10
+- Mapped to phases: 10 ✓
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-13*
-*Last updated: 2026-02-13 after initial definition*
+*Last updated: 2026-02-13 after roadmap creation*
