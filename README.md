@@ -1,7 +1,6 @@
-<!-- TEMPLATE: REPLACE ME -->
-# $project_name
+# Test GSD Flow
 
-$description
+A test project to validate the end-to-end branch creation workflow.
 
 ## What This Does
 
@@ -9,7 +8,7 @@ $description
 
 ## Getting Started
 
-1. `cd 02-worktrees/$branch_name`
+1. `cd 02-worktrees/test-gsd-flow`
 2. `uv sync` (if venv not yet created)
 3. Start coding
 
@@ -23,6 +22,6 @@ uv add <package-name>
 
 ## Status
 
-**Created:** $created_date
-**Branch:** `$branch_name`
+**Created:** 2026-02-13
+**Branch:** `test-gsd-flow`
 **Status:** 🟢 Active

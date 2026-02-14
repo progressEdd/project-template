@@ -1,7 +1,7 @@
 [project]
-name = "template-repo"
+name = "test-gsd-flow"
 version = "0.1.0"
-description = "Add your description here"
+description = "A test project to validate the end-to-end branch creation workflow."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
