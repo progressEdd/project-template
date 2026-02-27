@@ -169,68 +169,6 @@ Root README is updated manually or in a separate GSD step later.
 
 Dependency-driven sequence for implementing the automation:
 
-### Phase 1: Template README on 00-experiments (no dependencies)
-
-**What:** Create a template `README.md` on the `00-experiments` branch with placeholder sections that GSD will populate for each new project.
-
-**Why first:** Every subsequent branch inherits from `00-experiments`. If the template README doesn't exist, newly branched projects won't have one to populate — GSD would have to create it from scratch every time. Better to have a template that gets filled in.
-
-**Template structure:**
-```markdown
-# {PROJECT_NAME}
-
-## What This Is
-{DESCRIPTION}
-
-## Getting Started
-1. `cd 02-worktrees/{BRANCH_NAME}`
-2. `uv sync`
-3. Start coding
-
-## Dependencies
-See `pyproject.toml`
-
-## Status
-{STATUS}
-```
-
-**Depends on:** Nothing. Can be done immediately.
-
-### Phase 2: Branch + Worktree Creation (depends on Phase 1)
-
-**What:** GSD workflow that creates a branch from `00-experiments` and sets up the worktree.
-
-**Core commands:**
-```bash
-git worktree add -b <branch-name> 02-worktrees/<branch-name> 00-experiments
-```
-
-This single command: creates the branch from `00-experiments`, creates the worktree, and checks out the new branch in the worktree.
-
-**Depends on:** Phase 1 (template README exists to be populated).
-
-### Phase 3: Branch File Population (depends on Phase 2)
-
-**What:** GSD populates the branch's README and updates `pyproject.toml`.
-
-**Operations (all in `02-worktrees/<branch-name>/`):**
-1. Edit `README.md` — replace placeholders with project-specific content
-2. Edit `pyproject.toml` — change `name = "template-repo"` to `name = "<project-name>"`
-3. Optionally update `description` field in `pyproject.toml`
-4. `git add . && git commit` on the new branch
-
-**Depends on:** Phase 2 (worktree exists with inherited files).
-
-### Phase 4: Root README Index (depends on Phase 3)
-
-**What:** Update the root `README.md` on `master` to list the new project.
-
-**Operations:**
-1. Determine if root worktree is on `master` (check `git branch --show-current` in root)
-2. If yes: edit README.md, add entry, commit
-3. If no: skip with a note, or stash/switch/commit/switch-back
-
-**Depends on:** Phase 3 (need the project name and description to add to the index).
 
 ## Where Automation Lives
 
