@@ -1,0 +1,7 @@
+{
+  "workflow": {
+    "research": true,
+    "ui_phase": false,
+    "ui_safety_gate": true
+  }
+}
