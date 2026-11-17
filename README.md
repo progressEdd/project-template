@@ -22,15 +22,16 @@ If you only need specific submodules, you can initialize them individually:
 git submodule update --init 01-dev-onboarding
 ```
 
-## Active Experiments
+## shippEdd Skills
 
-Projects branched from `00-experiments`, each with its own worktree in `02-worktrees/`.
+This repo embeds the [shippEdd](https://github.com/progressEdd/shippEdd.git) AI coding agent skills as a git subtree at `.agents/skills/shippEdd/`, so they ship with every clone of the template.
 
-| Branch | Description | Worktree Path | Created |
-|--------|-------------|---------------|---------|
-| `test-gsd-flow` | A test project to validate the end-to-end branch creation workflow. | `02-worktrees/test-gsd-flow` | 2026-02-13 |
+To start using the skills, run the onboarding wizard:
+```
+/skill:bootstrap
+```
 
-To set up a worktree for an existing branch:
+To pull in the latest shippEdd updates later:
 ```bash
-git worktree add 02-worktrees/<branch-name> <branch-name>
+git subtree pull --prefix=.agents/skills/shippEdd https://github.com/progressEdd/shippEdd.git master --squash
 ```
