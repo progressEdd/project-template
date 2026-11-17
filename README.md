@@ -21,3 +21,16 @@ If you only need specific submodules, you can initialize them individually:
 # For just the dev-onboarding submodule
 git submodule update --init 01-dev-onboarding
 ```
+
+## Active Experiments
+
+Projects branched from `00-experiments`, each with its own worktree in `02-worktrees/`.
+
+| Branch | Description | Worktree Path | Created |
+|--------|-------------|---------------|---------|
+| `test-gsd-flow` | A test project to validate the end-to-end branch creation workflow. | `02-worktrees/test-gsd-flow` | 2026-02-13 |
+
+To set up a worktree for an existing branch:
+```bash
+git worktree add 02-worktrees/<branch-name> <branch-name>
+```
